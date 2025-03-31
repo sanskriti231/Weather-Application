@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.post("/", async (req, res) => {
     const city = req.body.city;    
-    const apiKey = process.env.api_Key;
+    const apiKey = process.env.api_key;
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
     function capitalizeFirstLetter(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
