@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/output.css">
+    <title>Get Weather</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+        background-image: url(./images/cloudvector.jpg); 
+        background-repeat: no-repeat; background-size: cover;}
+    </style>
+</head>
+<body>
+    <a href="/"><button class="m-5 border-2 font-[Sour_Gummy] bg-sky-400 p-2 rounded-xl opacity-60">Home</button></a>
+    <div class="bg-sky-400 m-auto mt-5 flex flex-col justify-center border-2 rounded-2xl items-center opacity-60 h-120 w-150">
+        <h2 class="font-[Tektur] text-3xl">Temperature in</h2>
+        <br>
+        <h1 class="font-[Sour_Gummy] text-5xl text-black"><%=weather.city%></h1>
+        <br>
+        <h2 class="font-[Tektur] text-3xl">is <%= weather.temperature %></h2><br>
+        <h2 class="font-[Tektur] text-2xl">Weather: <%=weather.description%></h2>
+        <img src="<%= weather.image%>" alt="image_here">
+    </div>
+
+
+    <script>
+        const weather = JSON.stringify(weather);
+        function capitalizeFirstLetter(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+    </script>
+    <footer class="text-center w-full  text-lg font-[Tektur] font-bold fixed bottom-5 bg-white">Made with 💞 by Sanskriti Gupta</footer>
+</body>
+</html>

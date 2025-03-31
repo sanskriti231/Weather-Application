@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/output.css">
+    <title>Get Weather</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+        background-image: url(./images/cloudvector.jpg); 
+        background-repeat: no-repeat; background-size: cover;}
+    </style>
+</head>
+<body class="text-center">
+    <h1 class="text-center text-6xl mt-15 font-[Sour_Gummy]" style="text-shadow: 3px 3px 5px rgba(56, 81, 149, 0.9);">Weather Application</h1>
+    <form action="/" method="post">
+        <input type="text" class="bg-sky-400 border-[#000000] opacity-70 font-[Tektur] text-2xl font-bold border-2 px-4 py-3 mt-20 w-xl rounded-2xl text-[#000000]" name="city" placeholder="Enter your city">
+        <br>
+        <button type="Submit" class="border-2 font-bold mt-10 px-3 opacity-70 py-3 active:scale-90 rounded bg-sky-400 border-[#000000] font-[Tektur]">Get Weather</button>
+    </form>
+    <% if (error) { %>
+        <h2 class="font-[Tektur] text-sm m-5">Error getting weather information for provided city/town.<br>
+        Please check city name and try again.</h2>
+    <% } %>
+    <footer class="text-center w-full  text-lg font-[Tektur] font-bold fixed bottom-5 bg-white">Made with 💞 by Sanskriti Gupta</footer>
+</body>
+</html>

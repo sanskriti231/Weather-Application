@@ -1,0 +1,23 @@
+{
+  "name": "weatherproject",
+  "version": "1.0.0",
+  "description": "This project returns the type of weather in the particular city you entered.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "Sanskriti Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.17",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "https": "^1.0.0",
+    "path": "^0.12.7",
+    "tailwindcss": "^4.0.17",
+    "weatherproject": "file:"
+  }
+}
