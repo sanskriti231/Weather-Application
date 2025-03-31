@@ -38,6 +38,4 @@ app.post("/", async (req, res) => {
     }
 });
 
-app.listen(process.env.PORT, () => {
-    console.log('Server running on http://localhost:3000');
-});
+module.exports = app;
