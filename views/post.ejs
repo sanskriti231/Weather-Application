@@ -29,10 +29,15 @@
 
 
     <script>
-        const weather = JSON.stringify(weather);
         function capitalizeFirstLetter(str) {
             return str.charAt(0).toUpperCase() + str.slice(1);
         }
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                console.log("esc pressed!");                
+                window.location.href = "/";
+            }
+        });
     </script>
     <footer class="text-center w-full  text-lg font-[Tektur] font-bold fixed bottom-5 bg-white">Made with 💞 by Sanskriti Gupta</footer>
 </body>
